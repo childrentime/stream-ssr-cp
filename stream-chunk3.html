@@ -1,0 +1,27 @@
+window.__remixContext = {"url":"/","state":{"loaderData":{"routes/_index":{"product":101,"reviews":{}},"root":null},"actionData":null,"errors":null},"future":{"v3_fetcherPersist":false,"v3_relativeSplatPath":false}};__remixContext.p = function(v,e,p,x) {
+  if (typeof e !== 'undefined') {
+    x=new Error(e.message);
+    x.stack=e.stack;
+    p=Promise.reject(x);
+  } else {
+    p=Promise.resolve(v);
+  }
+  return p;
+};
+__remixContext.n = function(i,k) {
+  __remixContext.t = __remixContext.t || {};
+  __remixContext.t[i] = __remixContext.t[i] || {};
+  let p = new Promise((r, e) => {__remixContext.t[i][k] = {r:(v)=>{r(v);},e:(v)=>{e(v);}};});
+setTimeout(() => {if(typeof p._error !== "undefined" || typeof p._data !== "undefined"){return;} __remixContext.t[i][k].e(new Error("Server timeout."))}, 5000);
+  return p;
+};
+__remixContext.r = function(i,k,v,e,p,x) {
+  p = __remixContext.t[i][k];
+  if (typeof e !== 'undefined') {
+    x=new Error(e.message);
+    x.stack=e.stack;
+    p.e(x);
+  } else {
+    p.r(v);
+  }
+};Object.assign(__remixContext.state.loaderData["routes/_index"], {"reviews":__remixContext.n("routes/_index", "reviews")});__remixContext.a=1;

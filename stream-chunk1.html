@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>New Remix App</title><meta name="description" content="Welcome to Remix!"/></head><body><div style="font-family:system-ui, sans-serif;line-height:1.8"><div>101</div><!--$?--><template id="B:0"></template><div>12314</div><!--/$--><h1>Welcome to Remix</h1><ul><li><a target="_blank" href="https://remix.run/tutorials/blog" rel="noreferrer">15m Quickstart Blog Tutorial</a></li><li><a target="_blank" href="https://remix.run/tutorials/jokes" rel="noreferrer">Deep Dive Jokes App Tutorial</a></li><li><a target="_blank" href="https://remix.run/docs" rel="noreferrer">Remix Docs</a></li></ul></div><script>((STORAGE_KEY, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({
+        key
+      }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(STORAGE_KEY);
+    }
+  })("positions", null)</script><link rel="modulepreload" href="/build/manifest-7EC5EE97.js"/><link rel="modulepreload" href="/build/entry.client-YLSXGZUU.js"/><link rel="modulepreload" href="/build/_shared/chunk-ZWGWGGVF.js"/><link rel="modulepreload" href="/build/_shared/chunk-F6V44A32.js"/><link rel="modulepreload" href="/build/_shared/chunk-XU7DNSPJ.js"/><link rel="modulepreload" href="/build/_shared/chunk-35BGBGDV.js"/><link rel="modulepreload" href="/build/_shared/chunk-UWV35TSL.js"/><link rel="modulepreload" href="/build/_shared/chunk-GIAAE3CH.js"/><link rel="modulepreload" href="/build/_shared/chunk-BOXFZXVX.js"/><link rel="modulepreload" href="/build/_shared/chunk-PNG5AS42.js"/><link rel="modulepreload" href="/build/root-DTEPJSSK
